@@ -1,12 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cats Catalog</title>
-</head>
-<body>
-  <h1>Champion</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cats Catalog</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="page-header">
+        <div class="container">
+          <div class="header">
+            <img src="./images/logo.svg" alt="Logo" class="header__logo" />
+
+            <nav class="header-menu">
+              <ul class="header-menu__list">
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">Main</a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">Gallery</a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">News</a>
+                </li>
+                <li class="header-menu__item">
+                  <a href="#" class="header-menu__link">Profile</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header-contacts">
+              <a href="tel:+7 989 111 22 33">+7 989 111 22 33</a>
+              <span class="header-contacts__text">Звони скорее!</span>
+            </div>
+          </div>
+
+          <p class="page-header__found">Найдено 349 котов</p>
+        </div>
+      </header>
+
+      <main class="page-content">
+        <div class="container">
+          <div class="sorting">
+            <span class="sorting__text">Сортировать по:</span>
+            <button type="button" class="sorting__btn">Цене</button>
+            <button type="button" class="sorting__btn">Возрасту</button>
+          </div>
+
+          <div class="products">
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+            <div class="product">
+              <div class="product__img-wrap">
+                <img src="./images/img1.jpg" alt="" class="product__img" />
+                <span class="product__discount">-40%</span>
+                <button type="button" class="product__favorites"></button>
+              </div>
+              <div class="product__content">
+                <h2 class="product__title">Кот полосатый</h2>
+                <div class="product__description">
+                  <span class="product__description--color"
+                    >Коричневый <br />
+                    окрас</span
+                  >
+                  <div>
+                    <span class="product__description--month">2 мес.</span>
+                    <span class="product__description--age">Возраст</span>
+                  </div>
+                  <div>
+                    <span class="product__description--sum">4</span>
+                    <span class="product__description--amount">Кол-во лап</span>
+                  </div>
+                </div>
+                <h3 class="product__price">30 000 руб.</h3>
+              </div>
+              <button type="button" class="product__buy-btn">КУПИТЬ</button>
+            </div>
+          </div>
+
+          <div class="subscribe"></div>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>

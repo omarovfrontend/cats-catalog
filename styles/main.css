@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+}
+
+.page-header {
+  position: relative;
+  background-image: url("../images/bck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(31, 32, 33, 0.79);
+}
+
+.container {
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.header__logo {
+  display: block;
+}
+
+.header-menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.header-menu__item {
+  margin-right: 45px;
+}
+
+.header-menu__link {
+  display: block;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: background-image, 0.3s ease-in-out;
+}
+
+.header-menu__link:hover {
+  background-image: linear-gradient(to right, #bd182e, #4d1e23);
+}
+
+.header-contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+
+.header-contacts a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-contacts a:hover {
+  color: #9bf5d3;
+}
+
+.header-contacts span {
+  font-size: 18px;
+}
+
+.page-header__found {
+  position: relative;
+  z-index: 2;
+  font-size: 38px;
+  line-height: 46px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+/* page-content */
+.page-content {
+  padding-top: 40px;
+}
+
+.sorting {
+  display: flex;
+  align-items: center;
+  margin-bottom: 38px;
+}
+
+.sorting__text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  padding-right: 50px;
+}
+
+.sorting__btn {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 22px;
+  position: relative;
+  padding: 0 84px 0 0;
+}
+
+.sorting__btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 60px;
+  background-image: url("../images/arrow-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 15px;
+  transform: translateY(-50%);
+}
+
+/* products */
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.product {
+  max-width: 380px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product__img-wrap {
+  position: relative;
+}
+
+.product__img {
+  display: block;
+}
+
+.product__discount {
+  position: absolute;
+  top: 34px;
+  left: 38px;
+  color: #fff;
+  background-color: #e52d2d;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.product__favorites {
+  position: absolute;
+  top: 36px;
+  right: 32px;
+  background-image: url("../images/icon-heart-light.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  min-width: 46px;
+  min-height: 41px;
+  transition: all .2s ease-in-out;
+}
+
+.product__favorites:hover {
+  transform: scale(0.9);
+}
+
+.product__content {
+  background-color: #f3f3f3;
+  padding: 15px 30px;
+}
+
+.product__title {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.product__description {
+  display: flex;
+  justify-content: space-around;
+  border-left: 4px solid #6ebbd3;
+}
+
+.product__description--color,
+.product__description--age,
+.product__description--amount {
+  display: block;
+  font-size: 12px;
+}
+
+.product__description--month,
+.product__description--sum {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product__buy-btn {
+  background-color: #6ebbd3;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  width: inherit;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s linear;
+}
+
+.product__buy-btn:hover {
+  background-color: #3b95b0;
+}
